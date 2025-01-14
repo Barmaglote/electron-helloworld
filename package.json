@@ -1,0 +1,25 @@
+{
+  "name": "electron-helloworld",
+  "version": "1.0.0",
+  "description": "Hello World! App",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Barmaglote/electron-helloworld.git"
+  },
+  "keywords": [
+    "Electron"
+  ],
+  "author": "Evgenii Danilchenko (clone from original tutorial)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Barmaglote/electron-helloworld/issues"
+  },
+  "homepage": "https://github.com/Barmaglote/electron-helloworld#readme",
+  "devDependencies": {
+    "electron": "^34.0.0"
+  }
+}
