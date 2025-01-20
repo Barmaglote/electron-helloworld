@@ -6,7 +6,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "electron .",
-    "make": "electron-forge make"
+    "make": "electron-forge make",
+    "start:forge": "electron-forge start",
+    "package": "electron-forge package",
+    "publish": "electron-forge publish"
   },
   "repository": {
     "type": "git",
@@ -24,6 +27,7 @@
   "devDependencies": {
     "@electron-forge/cli": "^7.6.0",
     "@electron-forge/maker-squirrel": "^7.6.0",
+    "@electron-forge/publisher-github": "^7.6.0",
     "electron": "^34.0.0",
     "electron-devtools-installer": "^4.0.0",
     "electron-forge": "^5.2.4",
@@ -50,6 +54,8 @@
     }
   },
   "dependencies": {
-    "electron-compile": "^6.4.4"
+    "electron-compile": "^6.4.4",
+    "primeflex": "^3.3.1",
+    "update-electron-app": "^3.1.0"
   }
 }
