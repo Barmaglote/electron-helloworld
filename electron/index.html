@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full flex p-0 m-0">
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline'; connect-src *;">
+
+    <link rel="stylesheet" href="./../node_modules/primeflex/primeflex.css">
+    <title>Bookmark Manager</title>
+  </head>
+  <body class="border-0 flex p-0 m-0">
+    <div class="p-4 flex flex-column justify-content-between">
+      <div class="flex flex-grow-1 flex-column w-full  gap-2">
+        <h1 class="text-2xl font-bold">Bookmark Manager</h1>
+        <section class="add-new-links">
+          <form1 class="new-link-form">
+            <div class="flex flex-row w-full">
+              <div class="flex w-12">
+                <input type="text" name="price" id="new-link-input" class="border-1 border-round-1 w-30rem p-2 text-2xl h-3rem" placeholder="http://ya.ru" required>
+              </div>
+              <div class="w-12 flex">
+                <button class="p-button w-10rem" id="new-link-submit" type="submit" value="submit" disabled>Submit</button>
+              </div>
+            </div>
+          </form1>
+        </section>
+        <section class="links">
+          <div id="links" class="flex flex-column h-25rem w-full overflow-auto border-1"></div>
+        </section>
+        <section class="contols">
+          <div class="flex">
+            <button class="p-button w-10rem h-3rem" id="clear-storage" type="submit" value="submit" disabled>Clear Storage</button>
+          </div>
+        </section>
+      </div>
+      <div class="flex w-full">
+        <p id="info"></p>
+      </div>
+    </div>
+    <script src="./renderer.js"></script>
+  </body>
+</html>

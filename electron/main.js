@@ -6,10 +6,15 @@ const createWindow = () => {
     width: 800,
     height: 600,
     webPreferences: {
-      preload: path.join(__dirname, 'preload.js')
+      preload: path.join(__dirname, 'preload.js'),
+      nodeIntegration: false,
+      contextIsolation: true,
+      webSecurity: false
     }
   })
-  win.loadFile('app/index.html')
+  win.loadFile('electron/index.html')
+
+  //win.webContents.openDevTools();
 }
 
 app.whenReady().then(() => {
@@ -34,3 +39,4 @@ app.on('window-all-closed', () => {
 require('electron-reload')(path.join(__dirname), {
   electron: require(`${__dirname}/../node_modules/electron`),
 });
+

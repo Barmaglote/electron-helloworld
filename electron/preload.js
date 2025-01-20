@@ -25,3 +25,4 @@ contextBridge.exposeInMainWorld('api', {
     ipcRenderer.on(channel, (event, ...args) => callback(...args));
   },
 });
+

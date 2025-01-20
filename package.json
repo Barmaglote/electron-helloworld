@@ -2,7 +2,7 @@
   "name": "electron-helloworld",
   "version": "1.0.0",
   "description": "Hello World! App",
-  "main": "app/main.js",
+  "main": "electron/main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "electron .",
