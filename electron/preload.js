@@ -26,3 +26,14 @@ contextBridge.exposeInMainWorld('api', {
   },
 });
 
+contextBridge.exposeInMainWorld('electron', {
+  openExternalLink: (url) => {
+    const { shell } = require('electron');
+    console.log(shell)
+    shell.openExternal(url);
+  },
+  alert: (text) => {
+    alert(text);
+  }
+});
+

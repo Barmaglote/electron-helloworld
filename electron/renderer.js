@@ -36,6 +36,14 @@ clearSearchButton.addEventListener('click', () => {
   renderLinks();
 });
 
+linkSection.addEventListener('click', (event) => {
+  const url = event.target.href;
+  if (url) {
+    event.preventDefault();
+    window.electron.openExternalLink(url);
+  }
+});
+
 const parseResponse = (text) => {
   return parser.parseFromString(text, 'text/html');
 }
